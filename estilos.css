@@ -252,3 +252,31 @@ p, a, button{
 
 
     }
+
+
+@media screen and (max-width: 391px) {
+    .main__contact {
+        width: 80%; /* Reducimos el ancho del formulario para adaptarlo a la pantalla */
+        padding: 15px;
+        text-align: center; 
+        margin: 0 auto;
+    }
+
+    .main__title {
+        font-size: 18px;
+    }
+
+    .main__img {
+        display: none;
+    }
+
+    .in1,
+    .in2 {
+        width: 100%; 
+        font-size: 14px; 
+    }
+}
+
+
+
+
