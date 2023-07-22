@@ -237,12 +237,13 @@ p, a, button{
     
         .main__contact {
             width: 80%;
-            padding: 20px;
+            margin: 0 auto;
             background-image: url('./img/gifts.jpg'); 
             background-size: cover;  
             background-position: center; 
             background-repeat: no-repeat; 
-        }
+            text-align: center; 
+            justify-content: center;       }
     
         .main__title {
             font-size: 20px; 
