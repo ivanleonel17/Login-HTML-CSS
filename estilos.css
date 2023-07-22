@@ -12,9 +12,9 @@ p, a, button{
     font-size: 12.5px;
 }
 .main {
-    
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 40px ;
     margin-bottom: 40px;
 }
@@ -159,7 +159,7 @@ p, a, button{
         cursor: pointer;
         transition: .2s;
         display: block;
-        margin: 0 auto;
+        margin: 0 auto; 
         
     }
 
@@ -215,41 +215,39 @@ p, a, button{
         Color: orange;
     }
 
-    @media only screen and (max-width: 768px) {
+   
+    .main__input:hover {
+        background-color:red; 
+        color: white;
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    @media screen and (max-width: 768px) {
         .main {
-          flex-direction: column-reverse;
-          align-items: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
         }
-      
+    
         .main__img {
-          margin-right: 0;
-          margin-bottom: 1rem;
-          margin-top: 1rem;
-          width: 100%; 
-          max-width: 350px; 
-          height: auto;
+            display: none; 
         }
-      
+    
         .main__contact {
-          margin-left: 0;
-          margin-top: 20px;
-          width: 100%; 
-          max-width: 350px; 
+            width: 80%;
+            padding: 20px;
+            background-image: url('./img/gifts.jpg'); 
+            background-size: cover;  
+            background-position: center; 
+            background-repeat: no-repeat; 
+        }
+    
+        .main__title {
+            font-size: 20px; 
+            color: white; 
         }
 
-        @media only screen and (max-width: 576px) {
-            .main__img {
-              width: 100%; 
-              height: auto;
-              max-width: 350px; 
-            }
-          
-            .main__contact {
-              width: 100%; 
-              max-width: 350px; 
-              padding-left: 10px; 
-              padding-right: 10px; 
-            }
-          
-            
-          }
+
+    }
